@@ -29,7 +29,7 @@ namespace EasyCash.BusinessLayer.ValidationRules.AppUserValidationRules
             RuleFor(x => x.Email).EmailAddress().WithMessage("Enter a valid email address");
 
             //Pass Check
-            RuleFor(x=>x.ConfirmPassword).Equal(y=>y.Password).WithMessage("Passwords do not match"):
+            RuleFor(x => x.ConfirmPassword).Equal(y => y.Password).WithMessage("Passwords do not match");
         }
     }
 }
